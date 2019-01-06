@@ -1,0 +1,18 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "import/no-extraneous-dependencies": "off",
+    "import/no-named-as-default": "off",
+    "import/order": "off",
+    "sort-imports": 2,
+    "jsx-a11y/label-has-associated-control": "off",
+    "no-console": "off",
+    "class-methods-use-this": "off"
+  },
+  "env": {
+    "jest": true,
+    "browser": false
+  }
+}
