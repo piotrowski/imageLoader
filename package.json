@@ -1,7 +1,7 @@
 {
   "name": "@apiotrowski312/image-loader",
-  "version": "1.0.0",
-  "description": "Load image (or batch of images) and put them in Canvas for you. Pretty useful for machine learning",
+  "version": "1.0.1",
+  "description": "Load an image (or batch of images) and put them in Canvas for you. Pretty useful for machine learning with NodeJS and TensorFlow.",
   "main": "lib/index.js",
   "homepage": "https://github.com/apiotrowski312/imageLoader#README.md",
   "keywords": [

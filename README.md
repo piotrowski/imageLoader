@@ -1,6 +1,6 @@
 # @apiotrowski312/image-loader
 
-Load image (or batch of images) and put them in Canvas for you. Pretty useful for machine learning with NodeJS and TensorFlow
+Load an image (or batch of images) and put them in Canvas for you. Pretty useful for machine learning with NodeJS and TensorFlow.
 
 ## Installation
 
@@ -17,7 +17,7 @@ npm install @apiotrowski312/image-loader --save
 
 ## Usage
 
-This module assume that, you have all images in one directory. All of the images with the same nameing convention (for creating labels).
+This module assumes that, you have all images in one directory. All of the images with the same naming convention (for creating labels).
 
 #### Basic use
 ```javascript
@@ -29,20 +29,23 @@ const loadBatchOfImages = imageLoader.loadBatchSizeImages();
 ```
 
 #### Detailed options
+```javascript
+new LoadImages(PATH, LABELS, OPTIONS);
+```
+
 - PATH - path as a string
 - LABELS - Object, with key - value pairs. Each label should match your *labelRegExp* option.
 
 
-For example, if you have directory with images named like( and you didn't changes `labelRegExp`):
+For example, if you have a directory with images named like (and you didn't change `labelRegExp`):
 
-`first.1.jpg, first.2.jpg, second.jpg, third.xxx.qqq.png`,
+`one.1.jpg, one.2.jpg, two.jpg, two.xxx.qqq.png`,
 
-then your labels key should looks simmilar to following example. Values can be different, following example would work well with TensorFlowJS.
+then your labels key should look simmilar to following example. Values can be different, following example would work well with TensorFlowJS.
 ```javascript
 const labels = {
-  first: [1, 0, 0],
-  second: [0, 1, 0],
-  third: [0, 0, 1],
+  one: [1, 0],
+  two: [0, 1],
 }
 ```
 
