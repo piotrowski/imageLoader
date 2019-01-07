@@ -3,3 +3,4 @@ __tests__
 .prettierrc
 package-lock.json
 src
+.babelrc
