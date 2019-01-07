@@ -8,6 +8,10 @@
     "type": "git",
     "url": "https://github.com/apiotrowski312/imageLoader.git"
   },
+  "bugs": {
+    "url": "https://github.com/apiotrowski312/imageLoader/issues",
+    "email": "apiotrowski312@gmail.com"
+  },
   "author": {
     "name": "apiotrowski312",
     "email": "apiotrowski312@gmail.com"
