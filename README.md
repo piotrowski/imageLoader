@@ -1,4 +1,3 @@
 To do before first publish on npm:
- - pretty README.md
+ - pretty README.md with documentation
  - add JSDoc (or simmilar)
- - add npmignore
