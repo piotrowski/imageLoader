@@ -1,27 +1,42 @@
 {
-  "name": "imageloader",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "babel index.js --out-file lib/index.js",
-    "test": "jest",
-    "test:w": "jest --watchAll"
+  "name": "image-loader",
+  "version": "0.0.2",
+  "description": "Load images and put them in Canvas for you.",
+  "main": "lib/index.js",
+  "homepage": "https://github.com/apiotrowski312/imageLoader#README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apiotrowski312/imageLoader.git"
   },
-  "author": "",
-  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apiotrowski312/imageLoader/issues",
+    "email": "apiotrowski312@gmail.com"
+  },
+  "author": {
+    "name": "Aleksander Piotrowski",
+    "email": "apiotrowski312@gmail.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "test:w": "jest --watchAll",
+    "prepublish": "node_modules/babel-cli/bin/babel.js src --out-dir lib"
+  },
   "jest": {
     "testMatch": [
       "<rootDir>/__tests__/**.test.js"
     ]
   },
   "dependencies": {
+    "canvas": "^2.2.0",
+    "shuffle-seed": "^1.1.6"
+  },
+  "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "babel-core": "7.0.0-bridge.0",
-    "canvas": "^2.2.0",
     "eslint": "^5.12.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.3.0",
@@ -30,9 +45,6 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.3",
     "prettier": "^1.15.3",
-    "shuffle-seed": "^1.1.6"
-  },
-  "devDependencies": {
     "jest": "^23.6.0"
   }
 }

@@ -66,18 +66,18 @@ export default class LoadImages {
 
   async loadBatchSizeImages() {
     const labels = [];
-    const features = [];
+    const images = [];
 
     const { batchSize, trainSize } = this.options;
 
     for (let i = 0; i < batchSize; i += 1) {
-      const { label, feature } = await this.loadLabelAndImage();
+      const { label, image } = await this.loadLabelAndImage();
       labels.push(this.labels[label]);
-      features.push(feature);
+      images.push(image);
     }
 
     this.logs(`Loaded already ${(this.alreadyLoaded / trainSize) * 100}%`);
-    return { labels, features };
+    return { labels, images };
   }
 
   logs(text) {
@@ -88,7 +88,3 @@ export default class LoadImages {
     }
   }
 }
-
-// const imageLoader = new LoadImages('./__tests__', { test: [1] }, { batchSize: 1, trainSize: 1 });
-// imageLoader.loadLabelAndImage();
-// imageLoader.loadLabelAndImage();
