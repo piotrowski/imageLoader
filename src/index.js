@@ -1,6 +1,9 @@
-const fs = require('fs');
-const { createCanvas, loadImage } = require('canvas');
-const shuffleSeed = require('shuffle-seed');
+import '@babel/polyfill';
+
+import { createCanvas, loadImage } from 'canvas';
+
+import fs from 'fs';
+import shuffleSeed from 'shuffle-seed';
 
 export default class LoadImages {
   constructor(path, labels, options) {

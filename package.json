@@ -1,6 +1,6 @@
 {
   "name": "image-loader",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Load images and put them in Canvas for you.",
   "main": "lib/index.js",
   "homepage": "https://github.com/apiotrowski312/imageLoader#README.md",
@@ -20,7 +20,8 @@
   "scripts": {
     "test": "jest",
     "test:w": "jest --watchAll",
-    "prepublish": "node_modules/babel-cli/bin/babel.js src --out-dir lib"
+    "compile": "node_modules/@babel/cli/bin/babel.js src --out-dir lib",
+    "prepublish": "npm run compile"
   },
   "jest": {
     "testMatch": [
@@ -28,6 +29,7 @@
     ]
   },
   "dependencies": {
+    "@babel/polyfill": "^7.2.5",
     "canvas": "^2.2.0",
     "shuffle-seed": "^1.1.6"
   },
