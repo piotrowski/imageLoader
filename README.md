@@ -1,6 +1,6 @@
 # @apiotrowski312/image-loader
 
-Load an image (or batch of images) and put them in Canvas for you. Pretty useful for machine learning with NodeJS and TensorFlow.
+Load an image (or batch of images) and put them in Canvas for you. Pretty useful for machine learning with NodeJS and TensorFlow. Should work fine with any node thanks to `@babel/polyfil`.
 
 ## Installation
 
