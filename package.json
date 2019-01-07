@@ -1,19 +1,15 @@
 {
   "name": "image-loader",
   "version": "1.0.0",
-  "description": "Load images and put them in Canvas for you.",
+  "description": "Load image (or batch of images) and put them in Canvas for you. Pretty useful for machine learning",
   "main": "lib/index.js",
   "homepage": "https://github.com/apiotrowski312/imageLoader#README.md",
   "repository": {
     "type": "git",
     "url": "https://github.com/apiotrowski312/imageLoader.git"
   },
-  "bugs": {
-    "url": "https://github.com/apiotrowski312/imageLoader/issues",
-    "email": "apiotrowski312@gmail.com"
-  },
   "author": {
-    "name": "Aleksander Piotrowski",
+    "name": "apiotrowski312",
     "email": "apiotrowski312@gmail.com"
   },
   "license": "MIT",
