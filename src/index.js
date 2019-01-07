@@ -19,7 +19,7 @@ export default class LoadImages {
       labelRegExp: RegExp(/[^.]*/),
       extentionsRegExp: RegExp(/\.(jpg|png|jpeg)$/),
 
-      silentMode: false,
+      silentMode: true,
       ...options,
     };
 
