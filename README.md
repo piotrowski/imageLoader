@@ -17,7 +17,7 @@ npm install @apiotrowski312/image-loader --save
 
 ## Usage
 
-This module assumes that, you have all images in one directory. All of the images with the same naming convention (for creating labels).
+This module assumes that you have all images in one directory. All of the images with the same naming convention (for creating labels).
 
 #### Basic use
 ```javascript
@@ -41,7 +41,7 @@ For example, if you have a directory with images named like (and you didn't chan
 
 `one.1.jpg, one.2.jpg, two.jpg, two.xxx.qqq.png`,
 
-then your labels key should look simmilar to following example. Values can be different, following example would work well with TensorFlowJS.
+then your labels key should look similar to the following example. Values can be different, the following example would work well with TtensorFlowJS.
 ```javascript
 const labels = {
   one: [1, 0],
@@ -55,11 +55,11 @@ const labels = {
 | :-:	            |  :-:	                        |  :-:	          |
 | shuffle 	      | `true`  	                    | shuffle order of loading images if `true`  |
 | shufflePhrase 	| `'phrase'` 	                  | shuffle phrase for `shuffle-seed`  |
-| batchSize   	  | `10` 	                        | how much images do you want load in one batch|
-| trainSize   	  | `100` 	                      | how much images do you want load to the script |
+| batchSize   	  | `10` 	                        | how many images do you want to load in one batch|
+| trainSize   	  | `100` 	                      | how many images do you want to load to the script |
 | labelRegExp   	| `RegExp(/[^.]*/)`  	          | regexp for matching labels from img filenames |
 | extentionsRegExp| `RegExp(/\.(jpg|png|jpeg)$/)` | regexp for matching images extentions (any other extention won't be loaded) |
-| silentMode   	  | `true` 	                      | if `true` then there will be no console.logs(). Usesfull for debugging. |
+| silentMode   	  | `true` 	                      | if `true` then there will be no console.logs(). Usesful for debugging. |
 
 ## Tests
 
